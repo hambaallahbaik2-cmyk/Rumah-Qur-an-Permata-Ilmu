@@ -1,444 +1,74 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Rumah Qur'an Permata Ilmu | Program Kesetaraan Paket C (Setara SMA)</title>
-    <meta name="description" content="Rumah Qur'an Permata Ilmu menyelenggarakan Program Pendidikan Kesetaraan Paket C (Setara SMA) yang terintegrasi dengan pembelajaran Tahsin dan Tahfidz Al-Qur'an. Daftar sekarang!">
-    <meta name="keywords" content="PKBM, Kejar Paket C, Setara SMA, Rumah Quran, Pendidikan Islam, Permata Ilmu, Ijazah Resmi">
-    <meta name="author" content="Rumah Qur'an Permata Ilmu">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome (Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Tailwind CSS -->
+    <title>Rumah Qur'an Permata Ilmu - Kejar Paket C</title>
+    <meta name="description" content="Pendaftaran Kejar Paket C Setara SMA di Rumah Qur'an Permata Ilmu.">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Tailwind Configuration untuk Tema Warna Islami -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                    colors: {
-                        rq: {
-                            green: '#065F46',      /* Emerald 800 - Hijau Tua */
-                            light: '#10B981',      /* Emerald 500 - Hijau Muda */
-                            gold: '#FBBF24',       /* Amber 400 - Kuning/Emas Muda */
-                            gold_hover: '#F59E0B', /* Amber 500 - Hover Emas */
-                            dark: '#022C22',       /* Emerald 950 - Hijau Gelap */
-                            bg: '#F8FAFC',         /* Slate 50 - Background Putih keabu-abuan */
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Custom Styling tambahan jika diperlukan */
-        .hero-pattern {
-            background-color: #065F46;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
+        .text-gold { color: #d4af37; }
+        .bg-gold { background-color: #d4af37; }
+        .hover-bg-gold:hover { background-color: #b5952f; }
     </style>
 </head>
-<body class="font-sans text-gray-800 bg-rq-bg antialiased selection:bg-rq-light selection:text-white">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-    <!-- Header / Navbar -->
-    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <div class="w-10 h-10 bg-rq-green rounded-full flex items-center justify-center text-rq-gold">
-                        <i class="fa-solid fa-book-quran text-xl"></i>
-                    </div>
-                    <div>
-                        <h1 class="font-bold text-xl text-rq-green leading-tight">Rumah Qur'an</h1>
-                        <h2 class="text-sm font-semibold text-gray-500 leading-tight">Permata Ilmu</h2>
-                    </div>
-                </div>
-
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 items-center">
-                    <a href="#beranda" class="text-gray-600 hover:text-rq-green font-medium transition-colors">Beranda</a>
-                    <a href="#profil" class="text-gray-600 hover:text-rq-green font-medium transition-colors">Profil</a>
-                    <a href="#program" class="text-gray-600 hover:text-rq-green font-medium transition-colors">Program Utama</a>
-                    <a href="#ppdb" class="bg-rq-gold hover:bg-rq-gold_hover text-rq-dark font-semibold px-6 py-2 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Daftar Sekarang</a>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-rq-green hover:text-rq-light focus:outline-none p-2">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
+    <!-- Navigasi -->
+    <nav class="bg-black shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Memanggil file logo yang diunggah -->
+                <img src="logo.jpeg" alt="Logo Rumah Qur'an Permata Ilmu" class="h-14 w-14 object-cover rounded-full border border-yellow-600">
+                <div>
+                    <h1 class="text-gold text-lg font-bold">Rumah Qur'an</h1>
+                    <p class="text-white text-xs tracking-widest">PERMATA ILMU</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
-            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
-                <a href="#beranda" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-rq-green hover:bg-gray-50">Beranda</a>
-                <a href="#profil" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-rq-green hover:bg-gray-50">Profil</a>
-                <a href="#program" class="mobile-link block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-rq-green hover:bg-gray-50">Program Utama</a>
-                <a href="#ppdb" class="mobile-link mt-4 block text-center bg-rq-gold hover:bg-rq-gold_hover text-rq-dark font-bold px-4 py-3 rounded-lg shadow">Daftar Sekarang</a>
+            <div class="hidden md:flex space-x-6 text-white">
+                <a href="#beranda" class="hover:text-gold transition">Beranda</a>
+                <a href="#program" class="hover:text-gold transition">Program Paket C</a>
+                <a href="#kontak" class="hover:text-gold transition">Kontak</a>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="pt-20 hero-pattern min-h-[90vh] flex items-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-rq-dark/40"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16 md:py-24">
-            <div class="text-center max-w-3xl mx-auto">
-                <span class="inline-block py-1 px-3 rounded-full bg-rq-gold/20 border border-rq-gold/50 text-rq-gold font-semibold text-sm mb-6">
-                    <i class="fa-solid fa-star mr-1"></i> Penerimaan Peserta Didik Baru
-                </span>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                    Raih Ijazah Setara SMA dengan <span class="text-rq-gold">Lingkungan Qur'ani</span>
-                </h1>
-                <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
-                    Rumah Qur'an Permata Ilmu menyelenggarakan Program Pendidikan Kesetaraan Paket C terintegrasi untuk Anda yang ingin meraih masa depan gemilang dan akhlak mulia.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#ppdb" class="bg-rq-gold hover:bg-rq-gold_hover text-rq-dark font-bold px-8 py-4 rounded-full text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                        <i class="fa-solid fa-user-plus mr-2"></i> Daftar PPDB Sekarang
-                    </a>
-                    <a href="#program" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm font-semibold px-8 py-4 rounded-full text-lg transition-all">
-                        Pelajari Program Kami
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Decorative Islamic Arch Bottom -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            <svg class="relative block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,114.32,189.7,97.74,232.55,85.63,276.47,70.16,321.39,56.44Z" fill="#F8FAFC"></path>
-            </svg>
+    <section id="beranda" class="bg-green-700 text-white py-20 px-4 text-center">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Program Pendidikan Kesetaraan Paket C</h2>
+            <p class="text-xl mb-8">Raih Ijazah Setara SMA dengan kurikulum terpadu dan bimbingan Al-Qur'an di Rumah Qur'an Permata Ilmu.</p>
+            <a href="#kontak" class="bg-gold hover-bg-gold text-black font-bold py-3 px-8 rounded-full transition shadow-lg inline-block">Daftar Sekarang</a>
         </div>
     </section>
 
-    <!-- Profil Singkat Section -->
-    <section id="profil" class="py-20 bg-rq-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-rq-dark mb-4">Profil Lembaga</h2>
-                <div class="w-24 h-1 bg-rq-gold mx-auto rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <!-- Visi Misi Text -->
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 bg-rq-green/10 rounded-full flex items-center justify-center text-rq-green">
-                                <i class="fa-solid fa-eye text-xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold text-rq-dark">Visi Kami</h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed">
-                            "Menjadi lembaga pendidikan kesetaraan unggulan yang mencetak generasi berwawasan global, cerdas secara akademik, dan berakhlakul karimah berlandaskan nilai-nilai luhur Al-Qur'an."
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 bg-rq-green/10 rounded-full flex items-center justify-center text-rq-green">
-                                <i class="fa-solid fa-bullseye text-xl"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold text-rq-dark">Misi Kami</h3>
-                        </div>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-check text-rq-light mt-1 mr-3"></i>
-                                <span>Menyelenggarakan pendidikan <strong>Paket C (Setara SMA)</strong> yang berkualitas.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-check text-rq-light mt-1 mr-3"></i>
-                                <span>Mengintegrasikan kurikulum nasional dengan pembelajaran Tahsin dan Tahfidz.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-check text-rq-light mt-1 mr-3"></i>
-                                <span>Membina akhlak peserta didik agar menjadi teladan di masyarakat.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa-solid fa-check text-rq-light mt-1 mr-3"></i>
-                                <span>Menyediakan lingkungan belajar yang islami, inklusif, dan memotivasi.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Image/Graphic -->
-                <div class="relative h-full flex justify-center items-center rounded-2xl overflow-hidden group">
-                    <div class="absolute inset-0 bg-rq-green/5 group-hover:bg-rq-green/10 transition-colors z-10 rounded-2xl"></div>
-                    <!-- Placeholder Image (Since we use vanilla HTML without external assets, we use a beautiful CSS composition) -->
-                    <div class="w-full aspect-square md:aspect-auto md:h-full min-h-[400px] bg-gradient-to-br from-rq-green to-rq-dark rounded-2xl flex flex-col items-center justify-center text-center p-8 relative overflow-hidden shadow-xl">
-                        <!-- Decorative circles -->
-                        <div class="absolute top-[-50px] right-[-50px] w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
-                        <div class="absolute bottom-[-50px] left-[-50px] w-64 h-64 bg-rq-gold/20 rounded-full blur-2xl"></div>
-                        
-                        <i class="fa-solid fa-quran text-8xl text-rq-gold mb-6 relative z-20"></i>
-                        <h4 class="text-2xl font-bold text-white relative z-20 mb-2">Pendidikan Akhlak & Akademik</h4>
-                        <p class="text-green-100 relative z-20 max-w-xs">Memadukan kurikulum akademik kesetaraan dengan pembentukan karakter Islami.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Program Utama (Paket C) Section -->
-    <section id="program" class="py-20 bg-white relative">
-        <!-- Background Decor -->
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-5">
-            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <pattern id="islamic-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="none" stroke="#065F46" stroke-width="1"/>
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#islamic-pattern)" />
-            </svg>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <span class="text-rq-light font-bold tracking-wider uppercase text-sm">Fokus Utama Kami</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-rq-dark mt-2 mb-4">Program Paket C (Setara SMA)</h2>
-                <div class="w-24 h-1 bg-rq-gold mx-auto rounded-full mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
-                    Kami berdedikasi penuh untuk menyelenggarakan satu program unggulan, memastikan kualitas pembelajaran yang terfokus dan maksimal bagi seluruh peserta didik.
-                </p>
-            </div>
-
-            <!-- Program Highlight Card -->
-            <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden transform hover:-translate-y-2 transition-transform duration-500 max-w-5xl mx-auto">
-                <div class="flex flex-col lg:flex-row">
-                    <!-- Left side: Highlight box -->
-                    <div class="bg-rq-green text-white p-10 lg:w-2/5 flex flex-col justify-center relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-4 opacity-20 text-9xl">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <span class="bg-rq-gold text-rq-dark text-xs font-bold px-3 py-1 rounded-full w-max mb-4 uppercase tracking-wide">Paling Diminati</span>
-                        <h3 class="text-3xl font-bold mb-4 relative z-10">Kejar Paket C</h3>
-                        <p class="text-emerald-100 text-lg mb-6 relative z-10">
-                            Solusi tepat bagi Anda yang putus sekolah atau tidak sempat mengikuti pendidikan formal SMA/MA karena berbagai hal.
-                        </p>
-                        <div class="mt-auto">
-                            <div class="text-4xl font-bold text-rq-gold mb-1">Setara SMA</div>
-                            <div class="text-sm text-emerald-200">Diakui Resmi oleh Negara (Kemdikbudristek)</div>
-                        </div>
-                    </div>
-
-                    <!-- Right side: Features list -->
-                    <div class="p-10 lg:w-3/5 bg-gray-50 flex flex-col justify-center">
-                        <h4 class="text-xl font-bold text-rq-dark mb-6">Keunggulan Program Kami:</h4>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- Feature 1 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-rq-light border border-gray-100">
-                                    <i class="fa-solid fa-file-certificate text-xl"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">Ijazah Resmi</h5>
-                                    <p class="text-sm text-gray-600 mt-1">Ijazah sah untuk melamar kerja, mendaftar CPNS/TNI/Polri, dan kuliah.</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Feature 2 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-rq-light border border-gray-100">
-                                    <i class="fa-solid fa-book-open-reader text-xl"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">Bimbingan Al-Qur'an</h5>
-                                    <p class="text-sm text-gray-600 mt-1">Gratis kelas pendampingan Tahsin dan pengenalan dasar Tahfidz.</p>
-                                </div>
-                            </div>
-
-                            <!-- Feature 3 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-rq-light border border-gray-100">
-                                    <i class="fa-solid fa-clock text-xl"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">Waktu Fleksibel</h5>
-                                    <p class="text-sm text-gray-600 mt-1">Jadwal belajar sangat ramah bagi siswa yang juga sedang bekerja.</p>
-                                </div>
-                            </div>
-
-                            <!-- Feature 4 -->
-                            <div class="flex gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-rq-light border border-gray-100">
-                                    <i class="fa-solid fa-chalkboard-user text-xl"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">Tutor Kompeten</h5>
-                                    <p class="text-sm text-gray-600 mt-1">Didampingi tenaga pengajar profesional, sabar, dan berpengalaman.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call To Action / PPDB Section -->
-    <section id="ppdb" class="py-20 relative overflow-hidden">
-        <div class="absolute inset-0 bg-rq-green"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-rq-dark to-transparent opacity-80"></div>
-        
-        <!-- Decorative pattern CTA -->
-        <div class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-rq-light/20 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-rq-gold mb-6 shadow-lg text-rq-dark text-3xl">
-                <i class="fa-solid fa-pen-to-square"></i>
-            </div>
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Pendaftaran Siswa Baru Telah Dibuka!</h2>
-            <p class="text-lg md:text-xl text-green-100 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Jangan biarkan masa depan terhambat. Lanjutkan pendidikan Anda bersama Rumah Qur'an Permata Ilmu, raih ijazah Paket C (Setara SMA) dan bentuk pribadi Qur'ani. Kuota terbatas!
-            </p>
+    <!-- Kontak / Pendaftaran -->
+    <section id="kontak" class="py-16 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-green-800 mb-8">Hubungi Kami</h2>
+            <p class="mb-8 text-gray-600">Untuk informasi pendaftaran lebih lanjut, silakan hubungi admin kami melalui WhatsApp di bawah ini:</p>
             
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <!-- Action Buttons: (In real case, href point to Whatsapp or Google Form) -->
-                <a href="https://wa.me/6281234567890" target="_blank" class="bg-rq-gold hover:bg-rq-gold_hover text-rq-dark font-bold px-8 py-4 rounded-full text-lg transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1 flex items-center justify-center gap-3">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i> Chat Admin Pendaftaran
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <!-- Tombol Admin 1 -->
+                <a href="https://wa.me/6285649265017" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                    Admin 1<br>0856-4926-5017
                 </a>
-                <a href="#" class="bg-white/10 hover:bg-white/20 text-white border-2 border-white/50 backdrop-blur-sm font-semibold px-8 py-4 rounded-full text-lg transition-all flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-list-check"></i> Isi Formulir Online
+                
+                <!-- Tombol Admin 2 -->
+                <a href="https://wa.me/6289648714000" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                    Admin 2<br>0896-4871-4000
                 </a>
             </div>
-            
-            <p class="text-sm text-green-200 mt-6">*Syarat pendaftaran: Fotokopi Ijazah SMP/Sederajat, KK, Akta Kelahiran, dan Pas Foto.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-rq-dark pt-16 pb-8 border-t-4 border-rq-gold">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-                <!-- Col 1: About -->
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 bg-rq-green rounded-full flex items-center justify-center text-rq-gold">
-                            <i class="fa-solid fa-book-quran text-xl"></i>
-                        </div>
-                        <div>
-                            <h2 class="font-bold text-xl text-white leading-tight">Rumah Qur'an</h2>
-                            <h3 class="text-sm font-semibold text-rq-gold leading-tight">Permata Ilmu</h3>
-                        </div>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Lembaga Pendidikan Kesetaraan terpercaya yang berfokus pada Program Paket C (Setara SMA) dipadukan dengan kurikulum nilai-nilai luhur Al-Qur'an.
-                    </p>
-                    <div class="flex space-x-4 pt-2">
-                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-rq-gold hover:text-rq-dark transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-rq-gold hover:text-rq-dark transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-rq-gold hover:text-rq-dark transition-colors"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <!-- Col 2: Quick Links -->
-                <div>
-                    <h3 class="text-white font-bold text-lg mb-6 relative pb-2 inline-block">
-                        Tautan Cepat
-                        <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-rq-gold rounded-full"></span>
-                    </h3>
-                    <ul class="space-y-3">
-                        <li><a href="#beranda" class="text-gray-400 hover:text-rq-gold transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Beranda</a></li>
-                        <li><a href="#profil" class="text-gray-400 hover:text-rq-gold transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Profil Lembaga</a></li>
-                        <li><a href="#program" class="text-gray-400 hover:text-rq-gold transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Program Paket C</a></li>
-                        <li><a href="#ppdb" class="text-gray-400 hover:text-rq-gold transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-xs"></i> Pendaftaran (PPDB)</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Contact Info -->
-                <div>
-                    <h3 class="text-white font-bold text-lg mb-6 relative pb-2 inline-block">
-                        Hubungi Kami
-                        <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-rq-gold rounded-full"></span>
-                    </h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-4">
-                            <i class="fa-solid fa-location-dot text-rq-gold mt-1"></i>
-                            <span class="text-gray-400 text-sm">Jl. Pendidikan Islami No. 123, Kelurahan Maju, Kecamatan Sukses, Kota Pendidikan 12345</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <i class="fa-solid fa-phone text-rq-gold"></i>
-                            <span class="text-gray-400 text-sm">+62 812-3456-7890</span>
-                        </li>
-                        <li class="flex items-center gap-4">
-                            <i class="fa-solid fa-envelope text-rq-gold"></i>
-                            <span class="text-gray-400 text-sm">info@permatailmu.sch.id</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                <p>&copy; <span id="year"></span> Rumah Qur'an Permata Ilmu. Hak Cipta Dilindungi.</p>
-                <p class="mt-2 md:mt-0">Dirancang khusus untuk Pendidikan Kesetaraan Berkualitas.</p>
-            </div>
-        </div>
+    <footer class="bg-black text-white text-center py-6 border-t-4 border-yellow-600">
+        <p class="text-sm text-gray-400">&copy; 2026 Rumah Qur'an Permata Ilmu. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript Sederhana -->
-    <script>
-        // Set tahun otomatis di footer
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Logika Hamburger Menu untuk Mobile
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        const icon = btn.querySelector('i');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        function toggleMenu() {
-            menu.classList.toggle('hidden');
-            if (menu.classList.contains('hidden')) {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            }
-        }
-
-        // Event listener klik pada tombol hamburger
-        btn.addEventListener('click', toggleMenu);
-
-        // Tutup menu saat tautan di mobile menu diklik
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', toggleMenu);
-        });
-
-        // Efek transparan pada Navbar saat di-scroll
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 20) {
-                header.classList.add('shadow-md');
-                header.classList.replace('bg-white/95', 'bg-white');
-            } else {
-                header.classList.remove('shadow-md');
-                header.classList.replace('bg-white', 'bg-white/95');
-            }
-        });
-    </script>
 </body>
 </html>
