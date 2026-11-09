@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rumah Qur'an Permata Ilmu - Kejar Paket C</title>
-    <meta name="description" content="Pendaftaran Kejar Paket C Setara SMA dan Kegiatan Santri Rumah Qur'an Permata Ilmu.">
+    <meta name="description" content="Pendaftaran Kejar Paket C Setara SMA, Galeri, dan Kegiatan Santri Rumah Qur'an Permata Ilmu.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .text-gold { color: #d4af37; }
         .bg-gold { background-color: #d4af37; }
         .hover-bg-gold:hover { background-color: #b5952f; }
-        /* Membatasi teks agar rapi di kartu depan */
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     </style>
@@ -29,9 +28,11 @@
                 </div>
             </div>
             
-            <div class="hidden md:flex space-x-6 text-white font-semibold">
+            <div class="hidden md:flex space-x-5 text-white font-semibold text-sm lg:text-base">
                 <a href="#beranda" class="hover:text-gold transition">Beranda</a>
-                <a href="#kegiatan" class="hover:text-gold transition">Kegiatan Santri</a>
+                <a href="#kegiatan" class="hover:text-gold transition">Berita</a>
+                <a href="#galeri" class="hover:text-gold transition">Galeri Santri</a>
+                <a href="#brosur" class="hover:text-gold transition">Brosur</a>
                 <a href="#kontak" class="hover:text-gold transition">Kontak</a>
             </div>
 
@@ -43,184 +44,267 @@
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-black text-white px-4 pt-2 pb-4 space-y-2 mt-2 border-t border-gray-800">
             <a href="#beranda" class="block hover:text-gold transition mobile-link py-2">Beranda</a>
-            <a href="#kegiatan" class="block hover:text-gold transition mobile-link py-2">Kegiatan Santri</a>
+            <a href="#kegiatan" class="block hover:text-gold transition mobile-link py-2">Berita</a>
+            <a href="#galeri" class="block hover:text-gold transition mobile-link py-2">Galeri Santri</a>
+            <a href="#brosur" class="block hover:text-gold transition mobile-link py-2">Brosur Pendaftaran</a>
             <a href="#kontak" class="block hover:text-gold transition mobile-link py-2">Kontak</a>
         </div>
     </nav>
 
-    <!-- Hero Section dengan Gradasi -->
+    <!-- Hero Section -->
     <section id="beranda" class="bg-gradient-to-br from-green-800 to-green-600 text-white py-24 px-4 text-center relative overflow-hidden">
         <div class="container mx-auto max-w-4xl relative z-10">
             <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Pendidikan Kesetaraan Paket C &<br><span class="text-gold">Bimbingan Al-Qur'an</span></h2>
             <p class="text-xl mb-10 font-light opacity-90">Raih Ijazah Setara SMA dengan kurikulum terpadu dan bimbingan karakter islami di Rumah Qur'an Permata Ilmu.</p>
             <a href="#kontak" class="bg-gold hover-bg-gold text-black font-bold py-3 px-8 rounded-full transition transform hover:scale-105 shadow-xl inline-block">Daftar Sekarang</a>
         </div>
-        <!-- Ornamen Latar Belakang -->
         <div class="absolute top-0 right-0 opacity-10">
             <i class="fas fa-book-open text-9xl -mt-10 -mr-10"></i>
         </div>
     </section>
 
-    <!-- Berita & Kegiatan Santri (Galeri Pop Up) -->
-    <section id="kegiatan" class="py-20 px-4 bg-gray-100">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Berita & Kegiatan Santri</h2>
-                <p class="text-gray-600 text-lg">Informasi terbaru seputar program belajar dan aktivitas harian santri.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Kartu Kegiatan 1 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl group" 
-                     onclick="openModal('Pendaftaran Gelombang 1 Dibuka!', '09 November 2026', 'Rumah Qur\'an Permata Ilmu resmi membuka pendaftaran untuk program Kejar Paket C setara SMA. Kuota sangat terbatas, segera daftarkan diri Anda untuk mendapatkan kursi. Pembelajaran dirancang fleksibel menyesuaikan kebutuhan siswa dengan tetap mengedepankan bimbingan akhlak dan bacaan Al-Qur\'an.', 'https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
-                    <div class="relative overflow-hidden">
-                        <!-- Gambar dari Unsplash sebagai ilustrasi -->
-                        <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pendaftaran" class="w-full h-52 object-cover transform transition duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-sm text-yellow-600 font-bold mb-2"><i class="far fa-calendar-alt mr-1"></i> 09 Nov 2026</p>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-green-700 transition">Pendaftaran Gelombang 1 Dibuka!</h3>
-                        <p class="text-gray-600 text-sm line-clamp-3">Rumah Qur'an Permata Ilmu resmi membuka pendaftaran untuk program Kejar Paket C setara SMA. Kuota sangat terbatas...</p>
-                        <p class="mt-4 text-green-700 font-semibold text-sm">Baca selengkapnya <i class="fas fa-arrow-right ml-1"></i></p>
+    <!-- Brosur Pendaftaran -->
+    <section id="brosur" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <div class="bg-green-50 border border-green-200 rounded-3xl p-8 md:p-12 shadow-lg flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <!-- Nanti Anda perlu mengupload gambar bernama brosur.jpeg ke GitHub -->
+                    <img src="brosur.jpeg" alt="Brosur Penerimaan Santri" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" class="rounded-xl shadow-md border-4 border-white max-w-full h-auto transform transition duration-500 hover:scale-105 cursor-pointer" onclick="openLightbox(this.src)">
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <p class="text-sm font-bold text-yellow-600 tracking-widest uppercase mb-2">Informasi Pendaftaran</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-green-800 mb-4">Penerimaan Santri Baru</h2>
+                    <p class="text-gray-600 mb-6 text-lg">Telah dibuka pendaftaran santri baru untuk program Kejar Paket C. Kuota kelas sangat terbatas guna menjaga kualitas pembelajaran dan bimbingan hafalan.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#kontak" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full transition shadow-md"><i class="fab fa-whatsapp mr-2"></i> Hubungi Admin</a>
+                        <button onclick="openLightbox(document.querySelector('#brosur img').src)" class="bg-white border-2 border-green-700 text-green-700 hover:bg-green-50 font-bold py-3 px-6 rounded-full transition shadow-md"><i class="fas fa-search-plus mr-2"></i> Perbesar Brosur</button>
                     </div>
                 </div>
-
-                <!-- Kartu Kegiatan 2 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl group" 
-                     onclick="openModal('Kegiatan Setoran Hafalan Rutin', '01 November 2026', 'Setiap pekannya, para santri program Paket C juga diwajibkan untuk mengikuti sesi bimbingan membaca dan setoran hafalan Al-Qur\'an. Kegiatan ini merupakan bagian dari kurikulum unggulan kami untuk mencetak lulusan yang tidak hanya cerdas secara akademik, namun juga kuat dalam nilai-nilai agama.', 'https://images.unsplash.com/photo-1609599006353-e629aaab31f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
-                    <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1609599006353-e629aaab31f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hafalan" class="w-full h-52 object-cover transform transition duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-sm text-yellow-600 font-bold mb-2"><i class="far fa-calendar-alt mr-1"></i> 01 Nov 2026</p>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-green-700 transition">Kegiatan Setoran Hafalan Rutin</h3>
-                        <p class="text-gray-600 text-sm line-clamp-3">Setiap pekannya, para santri program Paket C juga diwajibkan untuk mengikuti sesi bimbingan membaca dan setoran hafalan...</p>
-                        <p class="mt-4 text-green-700 font-semibold text-sm">Baca selengkapnya <i class="fas fa-arrow-right ml-1"></i></p>
-                    </div>
-                </div>
-
-                <!-- Kartu Kegiatan 3 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl group" 
-                     onclick="openModal('Pengambilan Modul Belajar Mandiri', '25 Oktober 2026', 'Modul pembelajaran mandiri untuk semester ganjil sudah tersedia. Santri diharapkan mengambil modul tersebut di sekretariat pada jam kerja (08.00 - 15.00 WIB). Modul ini akan menjadi panduan utama santri dalam mengejar ketertinggalan materi pelajaran SMA.', 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
-                    <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Modul Belajar" class="w-full h-52 object-cover transform transition duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-sm text-yellow-600 font-bold mb-2"><i class="far fa-calendar-alt mr-1"></i> 25 Okt 2026</p>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-green-700 transition">Pengambilan Modul Belajar Mandiri</h3>
-                        <p class="text-gray-600 text-sm line-clamp-3">Modul pembelajaran mandiri untuk semester ganjil sudah tersedia. Santri diharapkan mengambil modul tersebut di sekretariat...</p>
-                        <p class="mt-4 text-green-700 font-semibold text-sm">Baca selengkapnya <i class="fas fa-arrow-right ml-1"></i></p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Modal / Pop Up Container -->
-    <div id="news-modal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300 backdrop-blur-sm">
-        <!-- Kotak Modal -->
-        <div class="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 relative flex flex-col max-h-[90vh]" id="modal-content">
-            
-            <!-- Tombol Tutup (X) -->
-            <button onclick="closeModal()" class="absolute top-4 right-4 bg-black bg-opacity-60 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center transition z-10 shadow-lg">
-                <i class="fas fa-times text-xl"></i>
-            </button>
-
-            <!-- Gambar Modal -->
-            <img id="modal-img" src="" alt="Detail Berita" class="w-full h-64 md:h-80 object-cover flex-shrink-0">
-            
-            <!-- Isi Teks Modal (Bisa di-scroll jika panjang) -->
-            <div class="p-8 overflow-y-auto">
-                <p id="modal-date" class="text-sm text-yellow-600 font-bold mb-3"></p>
-                <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 leading-snug"></h3>
-                <p id="modal-text" class="text-gray-700 leading-relaxed text-lg"></p>
+    <!-- Galeri Dokumentasi Santri (Filterable) -->
+    <section id="galeri" class="py-20 px-4 bg-gray-100 border-t border-gray-200">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-10">
+                <p class="text-sm font-bold text-yellow-600 tracking-widest uppercase mb-2">FOTO KEGIATAN</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Galeri Dokumentasi Santri</h2>
+                <p class="text-gray-600">Pilih program untuk melihat dokumentasi kegiatan santri Rumah Qur'an Permata Ilmu.</p>
             </div>
+
+            <!-- Tombol Filter Kategori -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="filter-btn active bg-green-700 text-white px-5 py-2 rounded-full font-semibold shadow-sm transition border border-green-700" data-filter="semua">Semua <span class="bg-white text-green-700 px-2 py-0.5 rounded-full text-xs ml-1">6</span></button>
+                <button class="filter-btn bg-white text-green-800 hover:bg-green-50 px-5 py-2 rounded-full font-semibold shadow-sm transition border border-gray-200" data-filter="akademik">Belajar Akademik <span class="bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full text-xs ml-1">2</span></button>
+                <button class="filter-btn bg-white text-green-800 hover:bg-green-50 px-5 py-2 rounded-full font-semibold shadow-sm transition border border-gray-200" data-filter="quran">Hafalan Qur'an <span class="bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full text-xs ml-1">2</span></button>
+                <button class="filter-btn bg-white text-green-800 hover:bg-green-50 px-5 py-2 rounded-full font-semibold shadow-sm transition border border-gray-200" data-filter="sosial">Kegiatan Sosial <span class="bg-gray-200 text-gray-700 px-2 py-0.5 rounded-full text-xs ml-1">2</span></button>
+            </div>
+
+            <!-- Grid Foto Galeri -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" id="gallery-container">
+                <!-- Foto 1 (Akademik) -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-sm cursor-pointer group relative" data-category="akademik" onclick="openLightbox('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Belajar" class="w-full h-48 md:h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition transform scale-50 group-hover:scale-100"></i>
+                    </div>
+                </div>
+                <!-- Foto 2 (Quran) -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-sm cursor-pointer group relative" data-category="quran" onclick="openLightbox('https://images.unsplash.com/photo-1609599006353-e629aaab31f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1609599006353-e629aaab31f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Quran" class="w-full h-48 md:h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition"></i>
+                    </div>
+                </div>
+                <!-- Foto 3 (Sosial) -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-sm cursor-pointer group relative" data-category="sosial" onclick="openLightbox('https://images.unsplash.com/photo-1593113580332-ceb4b8c6a287?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1593113580332-ceb4b8c6a287?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Sosial" class="w-full h-48 md:h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition"></i>
+                    </div>
+                </div>
+                <!-- Foto 4 (Akademik) -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-sm cursor-pointer group relative" data-category="akademik" onclick="openLightbox('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Belajar 2" class="w-full h-48 md:h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition"></i>
+                    </div>
+                </div>
+                <!-- Foto 5 (Quran) -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-sm cursor-pointer group relative" data-category="quran" onclick="openLightbox('https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Quran 2" class="w-full h-48 md:h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition"></i>
+                    </div>
+                </div>
+                <!-- Foto 6 (Sosial) -->
+                <div class="gallery-item rounded-xl overflow-hidden shadow-sm cursor-pointer group relative" data-category="sosial" onclick="openLightbox('https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Sosial 2" class="w-full h-48 md:h-64 object-cover transform transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition flex items-center justify-center">
+                        <i class="fas fa-search-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-center text-gray-500 mt-6 text-sm"><i class="fas fa-info-circle mr-1"></i> Klik pada foto atau brosur untuk memperbesar (Zoom).</p>
+        </div>
+    </section>
+
+    <!-- Popup Gambar Layar Penuh (Lightbox) -->
+    <div id="lightbox-modal" class="fixed inset-0 bg-black bg-opacity-90 z-[60] hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300 backdrop-blur-sm">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-4xl hover:text-gray-300 transition z-10"><i class="fas fa-times"></i></button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl transform scale-95 transition-transform duration-300">
+    </div>
+
+    <!-- Berita & Info -->
+    <section id="kegiatan" class="py-16 px-4 bg-white border-t border-gray-200">
+        <div class="container mx-auto max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Pengumuman & Berita</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Berita 1 -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 border border-gray-200 cursor-pointer hover:shadow-lg transition group" onclick="openNewsModal('Pendaftaran Gelombang 1', '09 November 2026', 'Pendaftaran untuk program Kejar Paket C telah dibuka. Segera daftarkan diri Anda sebelum kuota penuh.')">
+                    <p class="text-sm text-yellow-600 font-bold mb-1">09 Nov 2026</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-green-700">Pendaftaran Gelombang 1</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Pendaftaran untuk program Kejar Paket C telah dibuka. Segera daftarkan diri Anda sebelum kuota penuh.</p>
+                </div>
+                <!-- Berita 2 -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 border border-gray-200 cursor-pointer hover:shadow-lg transition group" onclick="openNewsModal('Ikuti Kami di Instagram', '01 November 2026', 'Untuk mendapatkan update kegiatan harian, pastikan Anda sudah mem-follow Instagram resmi kami @rq_permatailmu.')">
+                    <p class="text-sm text-yellow-600 font-bold mb-1">01 Nov 2026</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-green-700">Ikuti Kami di Instagram</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Untuk mendapatkan update kegiatan harian, pastikan Anda sudah mem-follow Instagram resmi kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Berita (Teks) -->
+    <div id="news-modal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl max-w-xl w-full p-8 relative transform scale-95 transition-transform duration-300" id="news-content">
+            <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl"><i class="fas fa-times"></i></button>
+            <p id="news-date" class="text-sm text-yellow-600 font-bold mb-2"></p>
+            <h3 id="news-title" class="text-2xl font-bold text-gray-800 mb-4"></h3>
+            <p id="news-text" class="text-gray-700 text-lg leading-relaxed"></p>
         </div>
     </div>
 
-    <!-- Kontak / Pendaftaran & Alamat -->
-    <section id="kontak" class="py-20 px-4 bg-white border-t border-gray-200">
+    <!-- Kontak -->
+    <section id="kontak" class="py-20 px-4 bg-gray-50 border-t border-gray-200">
         <div class="container mx-auto max-w-4xl text-center">
             <h2 class="text-3xl font-bold text-green-800 mb-8">Hubungi & Kunjungi Kami</h2>
-            
-            <div class="mb-12 text-gray-700 bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200 inline-block max-w-2xl mx-auto transform hover:scale-105 transition duration-300">
+            <div class="mb-10 text-gray-700 bg-white p-8 rounded-2xl shadow-sm border border-gray-200 inline-block max-w-2xl mx-auto transform hover:scale-105 transition duration-300">
                 <i class="fas fa-map-marker-alt text-red-500 text-4xl mb-4 animate-bounce"></i>
                 <h3 class="font-bold text-2xl mb-3">Alamat Sekretariat</h3>
                 <p class="text-lg leading-relaxed">Jl. Griya Sejahtera, Dusun Keboan, Keboananom,<br>Kec. Gedangan, Kabupaten Sidoarjo,<br>Jawa Timur 61254, Indonesia.</p>
             </div>
-
-            <p class="mb-8 text-gray-600 text-lg">Untuk informasi pendaftaran lebih lanjut, hubungi admin kami atau kunjungi media sosial kami:</p>
-            
             <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <a href="https://wa.me/6285649265017" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto">
-                    <i class="fab fa-whatsapp text-2xl"></i> Admin 1
-                </a>
-                <a href="https://wa.me/6289648714000" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto">
-                    <i class="fab fa-whatsapp text-2xl"></i> Admin 2
-                </a>
-                <a href="https://www.instagram.com/rq_permatailmu?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto">
-                    <i class="fab fa-instagram text-2xl"></i> Instagram
-                </a>
+                <a href="https://wa.me/6285649265017" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto"><i class="fab fa-whatsapp text-2xl"></i> Admin 1</a>
+                <a href="https://wa.me/6289648714000" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto"><i class="fab fa-whatsapp text-2xl"></i> Admin 2</a>
+                <a href="https://www.instagram.com/rq_permatailmu?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto"><i class="fab fa-instagram text-2xl"></i> Instagram</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white text-center py-8 border-t-4 border-yellow-600">
+    <footer class="bg-black text-white text-center py-6 border-t-4 border-yellow-600">
         <p class="text-sm text-gray-400">&copy; 2026 Rumah Qur'an Permata Ilmu. All rights reserved.</p>
     </footer>
 
-    <!-- Script Fungsionalitas -->
+    <!-- Script Javascript -->
     <script>
-        // Logika Menu Mobile
+        // Menu Mobile
         const btn = document.getElementById('mobile-btn');
         const menu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+        document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => menu.classList.add('hidden')));
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
 
-        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
-        mobileLinks.forEach(link => { link.addEventListener('click', () => { menu.classList.add('hidden'); }); });
+        // Filter Galeri 
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
 
-        // Logika Pop Up (Modal) Berita
-        const modal = document.getElementById('news-modal');
-        const modalContent = document.getElementById('modal-content');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Hapus gaya tombol aktif dari semua tombol
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-green-700', 'text-white', 'border-green-700', 'active');
+                    b.classList.add('bg-white', 'text-green-800', 'border-gray-200');
+                    b.querySelector('span').classList.replace('bg-white', 'bg-gray-200');
+                    b.querySelector('span').classList.replace('text-green-700', 'text-gray-700');
+                });
+                
+                // Tambahkan gaya tombol aktif ke tombol yang diklik
+                btn.classList.add('bg-green-700', 'text-white', 'border-green-700', 'active');
+                btn.classList.remove('bg-white', 'text-green-800', 'border-gray-200');
+                btn.querySelector('span').classList.replace('bg-gray-200', 'bg-white');
+                btn.querySelector('span').classList.replace('text-gray-700', 'text-green-700');
 
-        function openModal(title, date, text, imgSrc) {
-            document.getElementById('modal-title').textContent = title;
-            document.getElementById('modal-date').innerHTML = `<i class="far fa-calendar-alt mr-1"></i> ${date}`;
-            document.getElementById('modal-text').textContent = text;
-            document.getElementById('modal-img').src = imgSrc;
-            
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            
-            // Memberikan sedikit jeda (timeout) agar efek transisi terlihat mulus
+                const filterValue = btn.getAttribute('data-filter');
+
+                // Sembunyikan atau tampilkan foto sesuai filter
+                galleryItems.forEach(item => {
+                    if (filterValue === 'semua' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox (Popup Gambar untuk Brosur & Galeri)
+        const lightbox = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(imgSrc) {
+            lightboxImg.src = imgSrc;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
             setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modalContent.classList.remove('scale-95');
-                modalContent.classList.add('scale-100');
+                lightbox.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
             }, 10);
         }
 
-        function closeModal() {
-            modal.classList.add('opacity-0');
-            modalContent.classList.remove('scale-100');
-            modalContent.classList.add('scale-95');
-            
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
             setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }, 300); // Waktu 300ms sesuai durasi transisi di CSS Tailwind
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+            }, 300);
+        }
+        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+
+        // Modal Berita
+        const newsModal = document.getElementById('news-modal');
+        const newsContent = document.getElementById('news-content');
+        
+        function openNewsModal(title, date, text) {
+            document.getElementById('news-title').textContent = title;
+            document.getElementById('news-date').textContent = date;
+            document.getElementById('news-text').textContent = text;
+            newsModal.classList.remove('hidden');
+            newsModal.classList.add('flex');
+            setTimeout(() => {
+                newsModal.classList.remove('opacity-0');
+                newsContent.classList.remove('scale-95');
+                newsContent.classList.add('scale-100');
+            }, 10);
         }
 
-        // Menutup Pop Up jika user mengeklik area gelap (luar kotak berita)
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) { closeModal(); }
-        });
+        function closeNewsModal() {
+            newsModal.classList.add('opacity-0');
+            newsContent.classList.remove('scale-100');
+            newsContent.classList.add('scale-95');
+            setTimeout(() => {
+                newsModal.classList.add('hidden');
+                newsModal.classList.remove('flex');
+            }, 300);
+        }
+        newsModal.addEventListener('click', (e) => { if (e.target === newsModal) closeNewsModal(); });
     </script>
 </body>
 </html>
