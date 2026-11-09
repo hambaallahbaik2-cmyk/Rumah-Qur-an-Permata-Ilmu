@@ -13,13 +13,12 @@
         .hover-bg-gold:hover { background-color: #b5952f; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
 
     <!-- Navigasi -->
     <nav class="bg-black shadow-md p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <!-- Memanggil file logo yang diunggah -->
                 <img src="logo.jpeg" alt="Logo Rumah Qur'an Permata Ilmu" class="h-14 w-14 object-cover rounded-full border border-yellow-600">
                 <div>
                     <h1 class="text-gold text-lg font-bold">Rumah Qur'an</h1>
@@ -28,7 +27,7 @@
             </div>
             <div class="hidden md:flex space-x-6 text-white">
                 <a href="#beranda" class="hover:text-gold transition">Beranda</a>
-                <a href="#program" class="hover:text-gold transition">Program Paket C</a>
+                <a href="#berita" class="hover:text-gold transition">Berita</a>
                 <a href="#kontak" class="hover:text-gold transition">Kontak</a>
             </div>
         </div>
@@ -43,32 +42,10 @@
         </div>
     </section>
 
-    <!-- Kontak / Pendaftaran -->
-    <section id="kontak" class="py-16 px-4">
-        <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="text-3xl font-bold text-green-800 mb-8">Hubungi Kami</h2>
-            <p class="mb-8 text-gray-600">Untuk informasi pendaftaran lebih lanjut, silakan hubungi admin kami melalui WhatsApp di bawah ini:</p>
-            
-            <div class="flex flex-col md:flex-row justify-center gap-6">
-                <!-- Tombol Admin 1 -->
-                <a href="https://wa.me/6285649265017" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition">
-                    <i class="fab fa-whatsapp text-3xl"></i>
-                    Admin 1<br>0856-4926-5017
-                </a>
-                
-                <!-- Tombol Admin 2 -->
-                <a href="https://wa.me/6289648714000" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition">
-                    <i class="fab fa-whatsapp text-3xl"></i>
-                    Admin 2<br>0896-4871-4000
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white text-center py-6 border-t-4 border-yellow-600">
-        <p class="text-sm text-gray-400">&copy; 2026 Rumah Qur'an Permata Ilmu. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+    <!-- Berita / Informasi Terbaru -->
+    <section id="berita" class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-10">Informasi & Berita Terbaru</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-xl shadow-md p-6 border border-gray-200">
+                    <p class="text-sm text-yellow-600 font-bold mb-
