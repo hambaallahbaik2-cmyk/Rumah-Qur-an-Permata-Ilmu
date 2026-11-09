@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth scroll-pt-24">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,39 +13,116 @@
         .hover-bg-gold:hover { background-color: #b5952f; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
     <!-- Navigasi -->
     <nav class="bg-black shadow-md p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="logo.jpeg" alt="Logo Rumah Qur'an Permata Ilmu" class="h-14 w-14 object-cover rounded-full border border-yellow-600">
+                <img src="logo.jpeg" alt="Logo Rumah Qur'an Permata Ilmu" class="h-12 w-12 object-cover rounded-full border border-yellow-600">
                 <div>
                     <h1 class="text-gold text-lg font-bold">Rumah Qur'an</h1>
                     <p class="text-white text-xs tracking-widest">PERMATA ILMU</p>
                 </div>
             </div>
+            
+            <!-- Menu Desktop -->
             <div class="hidden md:flex space-x-6 text-white">
                 <a href="#beranda" class="hover:text-gold transition">Beranda</a>
                 <a href="#berita" class="hover:text-gold transition">Berita</a>
                 <a href="#kontak" class="hover:text-gold transition">Kontak</a>
             </div>
+
+            <!-- Tombol Menu Mobile -->
+            <button id="mobile-btn" class="md:hidden text-gold text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile (Tersembunyi by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black text-white px-4 pt-2 pb-4 space-y-2 mt-2 border-t border-gray-800">
+            <a href="#beranda" class="block hover:text-gold transition mobile-link">Beranda</a>
+            <a href="#berita" class="block hover:text-gold transition mobile-link">Berita</a>
+            <a href="#kontak" class="block hover:text-gold transition mobile-link">Kontak</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="bg-green-700 text-white py-20 px-4 text-center">
+    <section id="beranda" class="bg-green-700 text-white py-24 px-4 text-center">
         <div class="container mx-auto max-w-3xl">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Program Pendidikan Kesetaraan Paket C</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Program Pendidikan Kesetaraan Paket C</h2>
             <p class="text-xl mb-8">Raih Ijazah Setara SMA dengan kurikulum terpadu dan bimbingan Al-Qur'an di Rumah Qur'an Permata Ilmu.</p>
             <a href="#kontak" class="bg-gold hover-bg-gold text-black font-bold py-3 px-8 rounded-full transition shadow-lg inline-block">Daftar Sekarang</a>
         </div>
     </section>
 
     <!-- Berita / Informasi Terbaru -->
-    <section id="berita" class="py-16 px-4 bg-white">
+    <section id="berita" class="py-20 px-4 bg-white">
         <div class="container mx-auto max-w-5xl">
-            <h2 class="text-3xl font-bold text-center text-green-800 mb-10">Informasi & Berita Terbaru</h2>
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Informasi & Berita Terbaru</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 rounded-xl shadow-md p-6 border border-gray-200">
-                    <p class="text-sm text-yellow-600 font-bold mb-
+                <div class="bg-gray-50 rounded-xl shadow-md p-8 border border-gray-200">
+                    <p class="text-sm text-yellow-600 font-bold mb-2">09 November 2026</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Pendaftaran Gelombang 1 Dibuka!</h3>
+                    <p class="text-gray-600 leading-relaxed">Rumah Qur'an Permata Ilmu resmi membuka pendaftaran untuk program Kejar Paket C setara SMA. Kuota terbatas, segera daftarkan diri Anda.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md p-8 border border-gray-200">
+                    <p class="text-sm text-yellow-600 font-bold mb-2">01 November 2026</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Ikuti Kami di Instagram</h3>
+                    <p class="text-gray-600 leading-relaxed">Untuk mendapatkan update kegiatan harian, foto pembelajaran, dan pengumuman terbaru, pastikan Anda sudah mem-follow Instagram resmi kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak / Pendaftaran & Alamat -->
+    <section id="kontak" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold text-green-800 mb-8">Hubungi & Kunjungi Kami</h2>
+            
+            <!-- Kotak Alamat -->
+            <div class="mb-12 text-gray-700 bg-white p-8 rounded-xl shadow-md border border-gray-200 inline-block max-w-2xl mx-auto">
+                <i class="fas fa-map-marker-alt text-red-500 text-4xl mb-4"></i>
+                <h3 class="font-bold text-2xl mb-3">Alamat Sekretariat</h3>
+                <p class="text-lg leading-relaxed">Jl. Griya Sejahtera, Dusun Keboan, Keboananom,<br>Kec. Gedangan, Kabupaten Sidoarjo,<br>Jawa Timur 61254, Indonesia.</p>
+            </div>
+
+            <p class="mb-8 text-gray-600 text-lg">Untuk informasi pendaftaran lebih lanjut, hubungi admin kami atau kunjungi media sosial kami:</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/6285649265017" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto">
+                    <i class="fab fa-whatsapp text-2xl"></i> Admin 1
+                </a>
+                <a href="https://wa.me/6289648714000" target="_blank" class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto">
+                    <i class="fab fa-whatsapp text-2xl"></i> Admin 2
+                </a>
+                <a href="https://www.instagram.com/rq_permatailmu?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 text-white text-lg font-semibold py-4 px-8 rounded-xl shadow-md transition w-full md:w-auto">
+                    <i class="fab fa-instagram text-2xl"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-6 border-t-4 border-yellow-600">
+        <p class="text-sm text-gray-400">&copy; 2026 Rumah Qur'an Permata Ilmu. All rights reserved.</p>
+    </footer>
+
+    <!-- Script Menu Mobile -->
+    <script>
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
