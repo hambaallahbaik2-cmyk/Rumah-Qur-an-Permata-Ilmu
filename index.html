@@ -57,9 +57,8 @@
         </div>
     </nav>
 
-    <!-- 1. Hero Section dengan Foto Latar & Efek Gelap -->
+    <!-- 1. Hero Section -->
     <section id="beranda" class="relative text-white py-32 md:py-40 px-4 text-center overflow-hidden bg-gray-900">
-        <!-- Gambar Latar Belakang diambil dari galeri1.jpeg -->
         <div class="absolute inset-0 z-0">
             <img src="galeri1.jpeg" onerror="this.src='https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'" alt="Latar Belakang" class="w-full h-full object-cover opacity-50 transform scale-105">
             <div class="absolute inset-0 bg-gradient-to-b from-green-900/80 via-black/60 to-black/90"></div>
@@ -76,17 +75,17 @@
         </div>
     </section>
 
-    <!-- 2. Kotak Statistik Berjalan (Animasi Angka) -->
+    <!-- 2. Kotak Statistik Berjalan (Animasi Angka Diperbarui) -->
     <section class="relative z-20 -mt-16 mx-4 md:mx-auto max-w-5xl">
         <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <div class="pt-4 md:pt-0">
                 <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4"><i class="fas fa-chalkboard-teacher text-green-700 text-2xl"></i></div>
-                <h3 class="text-4xl font-black text-gray-800 mb-1 flex justify-center"><span class="stat-number" data-target="15">0</span>+</h3>
+                <h3 class="text-4xl font-black text-gray-800 mb-1 flex justify-center"><span class="stat-number" data-target="6">0</span></h3>
                 <p class="text-gray-500 font-medium">Asatidz & Pengajar Ahli</p>
             </div>
             <div class="pt-8 md:pt-0">
                 <div class="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4"><i class="fas fa-user-graduate text-yellow-600 text-2xl"></i></div>
-                <h3 class="text-4xl font-black text-gray-800 mb-1 flex justify-center"><span class="stat-number" data-target="150">0</span>+</h3>
+                <h3 class="text-4xl font-black text-gray-800 mb-1 flex justify-center"><span class="stat-number" data-target="16">0</span></h3>
                 <p class="text-gray-500 font-medium">Santri Binaan Aktif</p>
             </div>
             <div class="pt-8 md:pt-0">
@@ -176,7 +175,6 @@
                 <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2.5 rounded-full font-semibold transition-all" data-filter="sosial">Sosial</button>
             </div>
 
-            <!-- HANYA 3 FOTO ASLI -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8" id="gallery-container">
                 <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="akademik" onclick="openLightbox('galeri1.jpeg')">
                     <img src="galeri1.jpeg" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
@@ -209,7 +207,6 @@
             </div>
             
             <div class="space-y-4">
-                <!-- Pertanyaan 1 -->
                 <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
                     <button onclick="toggleFAQ('faq1', 'icon1')" class="w-full px-8 py-5 text-left flex justify-between items-center focus:outline-none">
                         <span class="font-bold text-gray-800 text-lg">Apakah Ijazah Paket C diakui oleh Negara?</span>
@@ -219,7 +216,6 @@
                         Ya, Ijazah Paket C yang didapatkan berstatus resmi dan setara dengan ijazah SMA pada umumnya. Lulusan dapat menggunakan ijazah ini untuk melamar pekerjaan atau melanjutkan kuliah ke Perguruan Tinggi Negeri (PTN) maupun Swasta.
                     </div>
                 </div>
-                <!-- Pertanyaan 2 -->
                 <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
                     <button onclick="toggleFAQ('faq2', 'icon2')" class="w-full px-8 py-5 text-left flex justify-between items-center focus:outline-none">
                         <span class="font-bold text-gray-800 text-lg">Berapa biaya pendaftarannya?</span>
@@ -229,7 +225,6 @@
                         Pendidikan di Rumah Qur'an Permata Ilmu (meliputi Uang SPP, Gedung, Seragam, dan Kitab) adalah GRATIS, kami sediakan melalui program Beasiswa. Santri hanya dikenakan biaya untuk uang makan sehari-hari (tersedia subsidi/gratis bagi santri tidak mampu).
                     </div>
                 </div>
-                <!-- Pertanyaan 3 -->
                 <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
                     <button onclick="toggleFAQ('faq3', 'icon3')" class="w-full px-8 py-5 text-left flex justify-between items-center focus:outline-none">
                         <span class="font-bold text-gray-800 text-lg">Apakah santri wajib tinggal di asrama?</span>
@@ -269,8 +264,32 @@
         </div>
     </section>
 
+    <!-- Berita -->
+    <section id="kegiatan" class="py-20 px-4 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto max-w-5xl">
+            <div class="text-center mb-12">
+                <p class="text-sm font-bold text-yellow-600 tracking-widest uppercase mb-3">Informasi</p>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pengumuman & Berita</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 transform transition duration-300 hover:-translate-y-1 hover:shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-green-600"></div>
+                    <p class="text-sm text-yellow-600 font-bold mb-2 flex items-center"><i class="far fa-calendar-alt mr-2"></i> 13 Nov 2026</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Pendaftaran Dibuka</h3>
+                    <p class="text-gray-600 leading-relaxed">Pendaftaran untuk Program Beasiswa Tahfidz Al-Qur'an & Ilmu Syar'i (Setara SMA) telah dibuka hingga 30 Desember 2026.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 transform transition duration-300 hover:-translate-y-1 hover:shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-yellow-500"></div>
+                    <p class="text-sm text-yellow-600 font-bold mb-2 flex items-center"><i class="far fa-calendar-alt mr-2"></i> 01 Nov 2026</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Ikuti Kami di Instagram</h3>
+                    <p class="text-gray-600 leading-relaxed">Untuk mendapatkan update kegiatan harian, pastikan Anda mem-follow Instagram resmi kami @rq_permatailmu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Kontak & Footer -->
-    <section id="kontak" class="py-24 px-4 bg-white">
+    <section id="kontak" class="py-24 px-4 bg-white border-t border-gray-100">
         <div class="container mx-auto max-w-4xl text-center">
             <h2 class="text-3xl font-bold text-gray-800 mb-10">Hubungi & Kunjungi Kami</h2>
             <div class="mb-12 text-gray-700 bg-gray-50 p-10 rounded-[2rem] shadow-inner border border-gray-200 inline-block max-w-2xl mx-auto">
@@ -292,7 +311,7 @@
         <p class="text-sm text-gray-400">&copy; 2026 Rumah Qur'an Permata Ilmu. All rights reserved.</p>
     </footer>
 
-    <!-- 5. Tombol WhatsApp Melayang (Pojok Kanan Bawah) -->
+    <!-- 5. Tombol WhatsApp Melayang -->
     <a href="https://wa.me/6285649265017" target="_blank" title="Chat dengan Admin" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_4px_20px_rgba(37,211,102,0.5)] transition-transform transform hover:scale-110 z-50 animate-bounce cursor-pointer">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -372,7 +391,7 @@
 
         // Animasi Angka Statistik Berjalan
         const counters = document.querySelectorAll('.stat-number');
-        const speed = 200; // Semakin kecil angka ini, semakin cepat putarannya
+        const speed = 100;
         
         const animateCounters = () => {
             counters.forEach(counter => {
@@ -381,24 +400,22 @@
                 const inc = target / speed;
                 if (count < target) {
                     counter.innerText = Math.ceil(count + inc);
-                    setTimeout(animateCounters, 20); // Jalankan ulang setiap 20ms
+                    setTimeout(animateCounters, 30);
                 } else {
                     counter.innerText = target;
                 }
             });
         };
 
-        // Memulai animasi statistik saat layarnya mulai terlihat oleh pengunjung
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     animateCounters();
-                    observer.disconnect(); // Hanya jalankan animasi 1 kali
+                    observer.disconnect();
                 }
             });
         }, { threshold: 0.5 });
         
-        // Pasang sensor pada kotak statistik pertama
         if(counters.length > 0) {
             observer.observe(counters[0].parentElement.parentElement);
         }
