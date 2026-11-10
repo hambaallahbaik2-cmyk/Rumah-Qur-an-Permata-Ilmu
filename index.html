@@ -80,23 +80,23 @@
             <div class="bg-white rounded-[2rem] shadow-2xl p-6 md:p-10 border border-gray-100 mb-12">
                 <div class="flex flex-col md:flex-row gap-8 items-start">
                     
-                    <!-- Area Gambar Brosur (Kiri) -->
+                    <!-- Area Gambar Brosur -->
                     <div class="w-full md:w-1/2 flex flex-col gap-4">
                         <div class="relative group cursor-pointer" onclick="openLightbox('brosur1.jpg')">
-                            <img src="brosur1.jpg" alt="Brosur Halaman 1" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" class="rounded-xl shadow-md w-full object-cover transition duration-300 group-hover:opacity-90">
+                            <img src="brosur1.jpg" alt="Brosur Halaman 1" class="rounded-xl shadow-md w-full object-cover transition duration-300 group-hover:opacity-90">
                             <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all rounded-xl flex items-center justify-center">
                                 <span class="bg-green-700 text-white px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-search-plus mr-2"></i>Perbesar</span>
                             </div>
                         </div>
                         <div class="relative group cursor-pointer" onclick="openLightbox('brosur2.jpg')">
-                            <img src="brosur2.jpg" alt="Brosur Halaman 2" onerror="this.src='https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'" class="rounded-xl shadow-md w-full object-cover transition duration-300 group-hover:opacity-90">
+                            <img src="brosur2.jpg" alt="Brosur Halaman 2" class="rounded-xl shadow-md w-full object-cover transition duration-300 group-hover:opacity-90">
                             <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all rounded-xl flex items-center justify-center">
                                 <span class="bg-green-700 text-white px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-search-plus mr-2"></i>Perbesar</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Area Narasi Brosur (Kanan) -->
+                    <!-- Area Narasi Brosur -->
                     <div class="w-full md:w-1/2">
                         <div class="mb-8">
                             <h3 class="text-xl font-bold text-green-700 border-b-2 border-yellow-500 pb-2 mb-4"><i class="fas fa-star text-yellow-500 mr-2"></i>Program Unggulan</h3>
@@ -149,67 +149,49 @@
             <div class="flex flex-wrap justify-center gap-3 mb-12">
                 <button class="filter-btn active bg-green-700 text-white px-6 py-2.5 rounded-full font-semibold shadow-md transition-all" data-filter="semua">Semua</button>
                 <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2.5 rounded-full font-semibold transition-all" data-filter="akademik">Akademik</button>
+                <!-- Tombol Hafalan & Sosial tetap ada untuk persiapan jika Anda menambahkan foto baru nanti -->
                 <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2.5 rounded-full font-semibold transition-all" data-filter="quran">Hafalan</button>
                 <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2.5 rounded-full font-semibold transition-all" data-filter="sosial">Sosial</button>
             </div>
 
+            <!-- HANYA 3 FOTO ASLI YANG DITAMPILKAN -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8" id="gallery-container">
-                <!-- Foto 1 (Akademik) .jpeg -->
+                
+                <!-- Foto 1 (galeri1.jpeg) -->
                 <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="akademik" onclick="openLightbox('galeri1.jpeg')">
-                    <img src="galeri1.jpeg" onerror="this.src='https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <img src="galeri1.jpeg" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
                         <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
                     </div>
                 </div>
-                <!-- Foto 2 (Akademik) .jpeg -->
+                
+                <!-- Foto 2 (galeri2.jpeg) -->
                 <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="akademik" onclick="openLightbox('galeri2.jpeg')">
-                    <img src="galeri2.jpeg" onerror="this.src='https://images.unsplash.com/photo-1609599006353-e629aaab31f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <img src="galeri2.jpeg" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
                         <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
                     </div>
                 </div>
-                <!-- Foto 3 (Akademik) .jpeg -->
+                
+                <!-- Foto 3 (galeri3.jpeg) -->
                 <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="akademik" onclick="openLightbox('galeri3.jpeg')">
-                    <img src="galeri3.jpeg" onerror="this.src='https://images.unsplash.com/photo-1593113580332-ceb4b8c6a287?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <img src="galeri3.jpeg" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
                         <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
                     </div>
                 </div>
-
-                <!-- Foto 4 (Quran) .jpg -->
-                <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="quran" onclick="openLightbox('galeri4.jpg')">
-                    <img src="galeri4.jpg" onerror="this.src='https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
-                        <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
-                    </div>
-                </div>
-                <!-- Foto 5 (Quran) .jpg -->
-                <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="quran" onclick="openLightbox('galeri5.jpg')">
-                    <img src="galeri5.jpg" onerror="this.src='https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
-                        <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
-                    </div>
-                </div>
-                <!-- Foto 6 (Sosial) .jpg -->
-                <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="sosial" onclick="openLightbox('galeri6.jpg')">
-                    <img src="galeri6.jpg" onerror="this.src='https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
-                        <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Popup Gambar Layar Penuh (Diperbaiki) -->
+    <!-- Popup Gambar Layar Penuh -->
     <div id="lightbox-modal" class="fixed inset-0 bg-black/95 z-[100] hidden items-center justify-center p-4 md:p-8 opacity-0 transition-opacity duration-300 backdrop-blur-lg">
         
-        <!-- Tombol Silang Merah Besar yang Selalu Terlihat -->
         <button onclick="closeLightbox()" class="absolute top-4 right-4 md:top-8 md:right-8 bg-red-600 hover:bg-red-700 text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-2xl shadow-[0_0_20px_rgba(220,38,38,0.5)] transition-transform transform hover:scale-110 z-[110]">
             <i class="fas fa-times"></i>
         </button>
 
-        <!-- Wadah Gambar yang Rapi -->
         <div class="relative w-full max-w-5xl flex justify-center items-center h-full max-h-[85vh]">
             <img id="lightbox-img" src="" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl transform scale-95 transition-transform duration-300">
         </div>
