@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <!-- 2. Kotak Statistik Berjalan (Animasi Angka Diperbarui) -->
+    <!-- 2. Kotak Statistik Berjalan -->
     <section class="relative z-20 -mt-16 mx-4 md:mx-auto max-w-5xl">
         <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <div class="pt-4 md:pt-0">
@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    <!-- Galeri Dokumentasi Santri -->
+    <!-- Galeri Dokumentasi Santri (Total 7 Foto) -->
     <section id="galeri" class="py-20 px-4 bg-white border-t border-gray-100">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-12">
@@ -175,25 +175,65 @@
                 <button class="filter-btn bg-gray-100 text-gray-600 hover:bg-gray-200 px-6 py-2.5 rounded-full font-semibold transition-all" data-filter="sosial">Sosial</button>
             </div>
 
+            <!-- Area Grid Foto -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8" id="gallery-container">
+                
+                <!-- 1. Foto Akademik -->
                 <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="akademik" onclick="openLightbox('galeri1.jpeg')">
-                    <img src="galeri1.jpeg" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <img src="galeri1.jpeg" onerror="this.style.display='none'" alt="Foto Akademik" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
                         <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
                     </div>
                 </div>
+                
+                <!-- 2. Foto Akademik -->
                 <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="akademik" onclick="openLightbox('galeri2.jpeg')">
-                    <img src="galeri2.jpeg" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <img src="galeri2.jpeg" onerror="this.style.display='none'" alt="Foto Akademik" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
                         <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
                     </div>
                 </div>
+                
+                <!-- 3. Foto Akademik -->
                 <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="akademik" onclick="openLightbox('galeri3.jpeg')">
-                    <img src="galeri3.jpeg" alt="Foto Galeri" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <img src="galeri3.jpeg" onerror="this.style.display='none'" alt="Foto Akademik" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
                         <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
                     </div>
                 </div>
+
+                <!-- 4. Foto Sosial -->
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="sosial" onclick="openLightbox('galeri4.jpeg')">
+                    <img src="galeri4.jpeg" onerror="this.style.display='none'" alt="Foto Sosial" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                        <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
+                    </div>
+                </div>
+
+                <!-- 5. Foto Sosial -->
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="sosial" onclick="openLightbox('galeri5.jpeg')">
+                    <img src="galeri5.jpeg" onerror="this.style.display='none'" alt="Foto Sosial" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                        <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
+                    </div>
+                </div>
+
+                <!-- 7. Foto Hafalan (BARU) -->
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="quran" onclick="openLightbox('galeri7.jpeg')">
+                    <img src="galeri7.jpeg" onerror="this.style.display='none'" alt="Foto Hafalan" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                        <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
+                    </div>
+                </div>
+
+                <!-- 8. Foto Hafalan (BARU) -->
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-md cursor-pointer group relative" data-category="quran" onclick="openLightbox('galeri8.jpeg')">
+                    <img src="galeri8.jpeg" onerror="this.style.display='none'" alt="Foto Hafalan" class="w-full h-56 md:h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                        <span class="bg-white text-gray-800 px-4 py-2 rounded-full font-bold opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all shadow-lg"><i class="fas fa-expand mr-2"></i>Lihat Foto</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
