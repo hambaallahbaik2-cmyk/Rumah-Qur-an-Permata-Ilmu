@@ -13,6 +13,29 @@
         .hover-bg-gold:hover { background-color: #b5952f; }
         .glass-nav { background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
         .faq-content { transition: all 0.3s ease-in-out; }
+        
+        /* Animasi Angin (Golden Wind Dust) */
+        @keyframes windDrift {
+            0% { transform: translate(-10vw, 10vh) rotate(0deg); opacity: 0; }
+            20% { opacity: 0.8; }
+            80% { opacity: 0.8; }
+            100% { transform: translate(110vw, -15vh) rotate(360deg); opacity: 0; }
+        }
+        .wind-particle {
+            position: absolute;
+            background: #d4af37;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37;
+            animation: windDrift linear infinite;
+            z-index: 5;
+            pointer-events: none;
+        }
+        .wp-1 { top: 15%; animation-duration: 12s; animation-delay: 0s; width: 6px; height: 6px; opacity: 0.4; }
+        .wp-2 { top: 45%; animation-duration: 18s; animation-delay: 2s; width: 4px; height: 4px; opacity: 0.6; }
+        .wp-3 { top: 75%; animation-duration: 14s; animation-delay: 5s; width: 8px; height: 8px; opacity: 0.5; }
+        .wp-4 { top: 25%; animation-duration: 16s; animation-delay: 1s; width: 5px; height: 5px; opacity: 0.7; }
+        .wp-5 { top: 60%; animation-duration: 20s; animation-delay: 4s; width: 7px; height: 7px; opacity: 0.3; }
+        .wp-6 { top: 85%; animation-duration: 13s; animation-delay: 3s; width: 4px; height: 4px; opacity: 0.6; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased relative">
@@ -57,8 +80,16 @@
         </div>
     </nav>
 
-    <!-- 1. Hero Section -->
+    <!-- 1. Hero Section (Dengan Animasi Angin) -->
     <section id="beranda" class="relative text-white py-32 md:py-40 px-4 text-center overflow-hidden bg-gray-900">
+        <!-- Efek Partikel Debu Emas (Angin) -->
+        <div class="wind-particle wp-1"></div>
+        <div class="wind-particle wp-2"></div>
+        <div class="wind-particle wp-3"></div>
+        <div class="wind-particle wp-4"></div>
+        <div class="wind-particle wp-5"></div>
+        <div class="wind-particle wp-6"></div>
+
         <div class="absolute inset-0 z-0">
             <img src="galeri1.jpeg" onerror="this.src='https://images.unsplash.com/photo-1584286595398-a59f21d313f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'" alt="Latar Belakang" class="w-full h-full object-cover opacity-50 transform scale-105">
             <div class="absolute inset-0 bg-gradient-to-b from-green-900/80 via-black/60 to-black/90"></div>
@@ -75,7 +106,7 @@
         </div>
     </section>
 
-    <!-- 2. Kotak Statistik Berjalan -->
+    <!-- 2. Kotak Statistik Berjalan (Santri Diperbarui jadi 18) -->
     <section class="relative z-20 -mt-16 mx-4 md:mx-auto max-w-5xl">
         <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <div class="pt-4 md:pt-0">
@@ -85,7 +116,8 @@
             </div>
             <div class="pt-8 md:pt-0">
                 <div class="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4"><i class="fas fa-user-graduate text-yellow-600 text-2xl"></i></div>
-                <h3 class="text-4xl font-black text-gray-800 mb-1 flex justify-center"><span class="stat-number" data-target="16">0</span></h3>
+                <!-- Angka Santri Diperbarui Menjadi 18 -->
+                <h3 class="text-4xl font-black text-gray-800 mb-1 flex justify-center"><span class="stat-number" data-target="18">0</span></h3>
                 <p class="text-gray-500 font-medium">Santri Binaan Aktif</p>
             </div>
             <div class="pt-8 md:pt-0">
@@ -278,7 +310,7 @@
         </div>
     </section>
 
-    <!-- 4. Testimoni Singkat (Diperbarui jadi 1 Kotak Sentral) -->
+    <!-- 4. Testimoni Singkat -->
     <section class="py-24 px-4 bg-green-900 text-white relative overflow-hidden">
         <div class="absolute -right-10 top-5 opacity-10"><i class="fas fa-quote-right text-[250px]"></i></div>
         <div class="absolute -left-10 bottom-5 opacity-10"><i class="fas fa-star-and-crescent text-[150px]"></i></div>
@@ -289,7 +321,6 @@
                 <p class="text-gray-300">Kesan dan pesan asli dari Wali Santri kami.</p>
             </div>
             
-            <!-- Kotak Testimoni Tunggal yang Lebih Besar -->
             <div class="bg-white/10 backdrop-blur-md p-10 md:p-14 rounded-[2rem] border border-white/20 shadow-2xl relative">
                 <i class="fas fa-quote-left text-5xl text-gold/30 absolute top-8 left-8"></i>
                 
@@ -332,7 +363,7 @@
         </div>
     </section>
 
-    <!-- Kontak & Footer -->
+    <!-- Kontak & Footer (Tombol Admin 2 Dihapus) -->
     <section id="kontak" class="py-24 px-4 bg-white border-t border-gray-100">
         <div class="container mx-auto max-w-4xl text-center">
             <h2 class="text-3xl font-bold text-gray-800 mb-10">Hubungi & Kunjungi Kami</h2>
@@ -343,9 +374,9 @@
                 <h3 class="font-bold text-2xl mb-4 text-gray-800">Lokasi Asrama & Belajar</h3>
                 <p class="text-lg leading-relaxed text-gray-600">Jl. kav. Griya Sejahtera bloc C 61,<br>Keboanomas, Gedangan, Sidoarjo.</p>
             </div>
+            
             <div class="flex flex-col sm:flex-row justify-center items-center gap-5">
-                <a href="https://wa.me/6285649265017" target="_blank" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:-translate-y-1 w-full sm:w-auto text-lg"><i class="fab fa-whatsapp text-2xl"></i> Admin 1</a>
-                <a href="https://wa.me/6289648714000" target="_blank" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:-translate-y-1 w-full sm:w-auto text-lg"><i class="fab fa-whatsapp text-2xl"></i> Admin 2</a>
+                <a href="https://wa.me/6285649265017" target="_blank" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:-translate-y-1 w-full sm:w-auto text-lg"><i class="fab fa-whatsapp text-2xl"></i> Admin Pendaftaran</a>
                 <a href="https://www.instagram.com/rq_permatailmu?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center justify-center gap-3 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:opacity-90 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:-translate-y-1 w-full sm:w-auto text-lg"><i class="fab fa-instagram text-2xl"></i> Instagram</a>
             </div>
         </div>
