@@ -7,12 +7,15 @@
     <meta name="description" content="Pendaftaran Kejar Paket C, Galeri, dan Portal Orang Tua Rumah Qur'an Permata Ilmu.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Khusus Arab -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .text-gold { color: #d4af37; }
         .bg-gold { background-color: #d4af37; }
         .hover-bg-gold:hover { background-color: #b5952f; }
         .glass-nav { background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
         .faq-content { transition: all 0.3s ease-in-out; }
+        .font-arabic { font-family: 'Amiri', serif; line-height: 1.8; }
         
         /* Animasi Angin (Golden Wind Dust) */
         @keyframes windDrift {
@@ -81,7 +84,7 @@
     </nav>
 
     <!-- 1. Hero Section -->
-    <section id="beranda" class="relative text-white py-32 md:py-40 px-4 text-center overflow-hidden bg-gray-900">
+    <section id="beranda" class="relative text-white py-24 md:py-32 px-4 text-center overflow-hidden bg-gray-900">
         <!-- Efek Partikel Debu Emas (Angin) -->
         <div class="wind-particle wp-1"></div>
         <div class="wind-particle wp-2"></div>
@@ -97,8 +100,18 @@
         
         <div class="container mx-auto max-w-4xl relative z-10">
             <span class="bg-green-800/80 backdrop-blur-sm text-yellow-400 text-sm font-bold tracking-widest px-5 py-2 rounded-full border border-yellow-600/50 mb-6 inline-block shadow-lg">PENERIMAAN SANTRI BARU 2027/2028</span>
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight mt-4 drop-shadow-xl">Mencetak Generasi Qurani,<br><span class="text-gold drop-shadow-md">Berilmu & Berkarakter</span></h2>
+            
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight mt-2 drop-shadow-xl">Mencetak Generasi Qurani,<br><span class="text-gold drop-shadow-md">Berilmu & Berkarakter</span></h2>
+            
+            <!-- Tambahan Kotak Dalil Hadits -->
+            <div class="my-10 bg-black/40 backdrop-blur-sm border border-gold/30 p-6 md:p-8 rounded-[2rem] shadow-2xl max-w-3xl mx-auto transform transition duration-500 hover:scale-105 hover:bg-black/50">
+                <p class="font-arabic text-3xl md:text-4xl text-gold mb-4" dir="rtl">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</p>
+                <p class="text-gray-200 italic text-base md:text-lg mb-3 leading-relaxed">"Sebaik-baik kalian adalah orang yang belajar Al-Qur'an dan mengajarkannya."</p>
+                <p class="text-xs text-gold font-bold tracking-widest uppercase">(HR. Bukhari no. 5027)</p>
+            </div>
+
             <p class="text-lg md:text-xl mb-10 font-light opacity-90 max-w-2xl mx-auto leading-relaxed drop-shadow-md">Program Beasiswa Tahfidz Al-Qur'an & Ilmu Syar'i (Setara SMA).</p>
+            
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#brosur" class="bg-gold hover-bg-gold text-black font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-[0_10px_20px_rgba(212,175,55,0.3)] inline-block text-lg">Informasi Pendaftaran</a>
                 <a href="#galeri" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 inline-block text-lg"><i class="fas fa-play-circle mr-2"></i>Lihat Galeri</a>
@@ -362,7 +375,7 @@
         </div>
     </section>
 
-    <!-- Kontak & Footer (Kotak Lokasi dengan Tautan Pencarian Google Maps Permanen) -->
+    <!-- Kontak & Footer -->
     <section id="kontak" class="py-24 px-4 bg-white border-t border-gray-100">
         <div class="container mx-auto max-w-4xl text-center">
             <h2 class="text-3xl font-bold text-gray-800 mb-10">Hubungi & Kunjungi Kami</h2>
